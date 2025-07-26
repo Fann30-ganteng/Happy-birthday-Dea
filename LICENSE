@@ -1,29 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
   <meta charset="UTF-8">
   <title>Happy Birthday Dea</title>
-  <link rel="stylesheet" href="style.css">
- </head>
- <body>
-   <div class="card">
-    <img src="https://github.com/Fann30-ganteng/img/blob/main/ulangtahun.jpg?raw=true"alt="Birthday" class="Birthday">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6f0, #e6f7ff);
+      font-family: 'Comic Sans MS', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: auto;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 30px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+      margin: 20px;
+      position: relative;
+    }
+
+    .card h1 {
+      font-size: 3rem;
+      color: #ff3399;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+    .card h2 {
+      font-size: 2rem;
+      color: #333;
+      animation: fadeIn 2.5s ease-out forwards;
+    }
+
+    .text {
+      margin-top: 20px;
+    }
+
+    .text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .text h1 {
+      color: #ff69b4;
+    }
+
+    .Muted {
+      color: gray;
+      margin-top: 20px;
+    }
+
+    .decor {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-image: url('https://i.imgur.com/kF9HMpz.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .decor.left {
+      top: -30px;
+      left: -30px;
+    }
+
+    .decor.right {
+      bottom: -30px;
+      right: -30px;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    audio {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="decor left"></div>
+    <div class="decor right"></div>
+    <h1>Happy Birthday 🎉</h1>
+    <h2>Untuk Dea yang spesial 💖</h2>
+
     <div class="text">
-     <h1>Hi Dea
-     <p>Happy Birthday Dea! Today is the day to celebrate your Birthday your extraordinary existence in the journcy of life, I am greafel to have you by my side
-<br><br>
-Between seas, galaxles, and mooms, I was lucky I stepped on the same land,I Dreamed under the same stars as your
-<br><br>
-We've raversed oceans of memories, ventared through galaxies of experiences, and basked beneath the beauty of moons together, I feel incredibly fortunate to share unforgettable adventures with you
-<br><br>
-july this year be a chapter filled with happines, succes, and love,Happy Birthday 🎉🎂
-    <p class="Muted">-Fann -</p>
+      <h1>Hi Dea</h1>
+      <p>
+        Happy Birthday Dea! Today is the day to celebrate your extraordinary existence in the journey of life. I am grateful to have you by my side.
+        <br><br>
+        Between seas, galaxies, and moons, I was lucky I stepped on the same land, dreamed under the same stars as you.
+        <br><br>
+        We've traversed oceans of memories, ventured through galaxies of experiences, and basked beneath the beauty of moons together. I feel incredibly fortunate to share unforgettable adventures with you.
+        <br><br>
+        May this year be a chapter filled with happiness, success, and love. Happy Birthday 🎉🎂
+      </p>
+      <p class="Muted">- Fann -</p>
     </div>
-    <div class="space"></div>
+
     <audio controls autoplay>
-     <source src="hbd.mp3" type="audio/mp3"> Ypur does not support the audio element.
+      <source src="hbd.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
     </audio>
-    <script src="script.js"></script>
-   </div>
-  </body>
- </html>
+  </div>
+
+</body>
+</html>
